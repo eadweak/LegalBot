@@ -1,6 +1,6 @@
 import os
 
-TOKEN = '8150353350:AAGjbC5m3Xu9SqU7w_nWExpTZymAgj_jLVA'
+TOKEN = '\'
 DATABASE_PATH = os.path.join(os.getcwd(), "db/")
 FREE_ACCESS_HOURS = 3
 REFERRAL_BONUS_DAYS = 7
