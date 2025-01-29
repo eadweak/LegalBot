@@ -1,0 +1,10 @@
+CREATE TABLE users (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    telegram_id INTEGER NOT NULL UNIQUE,
+    subscription_expiry TIMESTAMP,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+INSERT INTO users (telegram_id, subscription_expiry) VALUES
+(123456789, '2023-12-31 23:59:59'),
+(987654321, NULL);

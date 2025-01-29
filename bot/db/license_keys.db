@@ -1,0 +1,14 @@
+CREATE TABLE license_keys (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    key TEXT NOT NULL UNIQUE,
+    subscription_duration INTEGER NOT NULL,
+    is_used INTEGER DEFAULT 0,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+INSERT INTO license_keys (key, subscription_duration) VALUES
+('ABC123', 30),
+('DEF456', 365),
+('GHI789', 30),
+('JKL012', 365),
+('MNO345', 30);
